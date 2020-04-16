@@ -1,109 +1,42 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>myfirstsite</title>
-	<style>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    #head2{
-      color:orange;
-    }
-    .cities{
-      background-color:black;
-      color:white;
-      padding:15px;
-      margin:20px;
-    }
-		p {
-			color: gray;
-		}
-    tr:hover {background-color:#f5f5f5;}
-		table,
-		th,
-		td {
-			border: 1px solid black;
-      border-collapse:collapse;
-		}
-    th,td{
-      padding:25px;         
-    }               
-    th{
-      text-align:left;
-    }
-	</style>
-</head>       <!--can't put commments while elements tag are open-->
-
-<body>
-  <h1>smiley inserted</h1>
-  <ul class="navbar">
-  <li><a href="#name">Name</a></li>
-  <li><a href="#new">new</a></li>
-  <li><a href="#throw">throw</a></li>
-  <h2>Grid of Boxes</h2></li>
-  </ul>
-<p>Float boxes side by side:</p>
-
-<div class="clearfix">
-  <div class="box" style="background-color:#bbb">
-  <p>Some text inside the box.</p>
-  </div>
-  <div class="box" style="background-color:#ccc">
-  <p>Some text inside the box.</p>
-  </div>
-  <div class="box" style="background-color:#ddd">
-  <p>Some text inside the box.</p>
+  <title>responsive css</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" >
+  </head>
+  <body>
+    <div class="header">
+      <h1>responsive css</h1>
+    </div>
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul>
+          <li>first</li>
+          <li>second</li>
+          <li>third</li>
+        </ul>
+      </div>
+      <div class="col-6 col-s-9">
+        <p>
+          This is responsive css .This page is designed to fit in all types of devieces irrespective of their screen size</p>
+        </div>
+          <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
   </div>
 </div>
-  	<a href="click me">click me</a>
-	<p>This is testing of link style in css</p>
-	<h3>My <span style="color:red">first</span> table</h3>
-	<p>Here we go</p>
-	<table id="t01">
-    <caption>SSN RECORD</caption>   <!--caption tag used-->
-		<tr>
-			<th>NAME</th>
-			<th>SSN ID</th>
-			<th>AGE</th>
-		</tr>
-		<tr>
-			<td>XYZ</td>
-			<td>45678</td>
-			<td>44</td>
-		</tr>
-		<tr>
-			<td>ABC</td>
-			<td>8909</td>
-			<td>66</td>
-		</tr>
-		<tr>
-			<td>NAMO</td>
-			<td>78912</td>
-			<td>99</td>
-		</tr>
-	</table>
-  <h2 id="head2">Lists testing</h2>
-  <h4>Ordered list</h4>
-  <ol type="a";>
-    <li>1st item</li>
-    <li>2nd item</li>
-    <li>3rd item</li>
-    </ol>
-    <h4>unordered-list</h4>
-  <ul style="list-style-type:circle">
-    <li>1st entry</li>
-    <li>2nd entry</li>
-    <li>3rd entry</li>
-  </ul>
-  <div style="background-color:black;color:white;padding:20px;">
-    <p>Block element testing</p>
-    <p>This paragraph has been designed for testing purposes only.It has nothing to do with any events and copyright.Okay cool.Let's check it out, how it looks.Hurray it's working</p>
-  </div>
-  <div class="cities">okay lets check the impleentaion of class on block elements using the class and div tag</div>
-  <!--to display a page within a webpage we use Iframes-->
-  <iframe src="demo_iframe.htm"height="100"width="300"style="border:none;"></iframe>
-  <!--entity testing less than sign can be treated as opening tag ..so to prevent such mishaps we use entities-->
-  <p>7 &lt 8</p>
-  <p>copyright sign &copy </p>
-</body>
 
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+      <img src="i
+    </div>
+  </body>
 </html>
