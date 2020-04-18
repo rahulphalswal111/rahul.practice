@@ -1,36 +1,66 @@
-.grid-container{
-  display:grid;
-  background-color: skyblue;
-  grid-template-columns: auto auto auto;
-  grid-gap:10px;
-  align-content: center;
-  padding:10px;
+#img{
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJkAZgMBIgACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIFAwQGB//EAC8QAAICAgECBQIGAQUAAAAAAAABAgMEEQUhMRITQVFhBjIUInGBkcFCFRYjUqH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB0RAQADAAMBAQEAAAAAAAAAAAABAhEDITESUUH/2gAMAwEAAhEDEQA/APrAAD1AABgAAYAAJighQKCACgADAABQAAAAAKQEFAAFBChMUEAGJACqAAAACCgmzCy6upbnLX7bC45ASMlOKlF7T7MoFBCgUEARgACqABvRA2l3ejqcjymFx2M78y+MK96T7uT9kvV/B1uSy9Pyoz8HRucv+sfVnzn8X/uP6oVlrcMLFn5WLX6dO8v1f9EmcdY4/Jl6DO+p7ePzo2349mNx10ul0p+Lwv3ktdF/OjdwzfPUZOSamtpp9GvTRnm8Xi5mDLFyIqdUlprXY+eU08n9Kzur1PK4quxrw/5VL3j8duhmLfrtWaz0+m4WS6pqqb/I/tfszZ7T7M8VxPM0Z1UZVWqSfaS/v2ZvMbIae/fozTPJxf2G6Bx12eKKfwchXnmFBAEYFImNhVOHJsUK22cpreXvVdTW9Sl0T/sNUrtoh0J0wyK7brZ/ltXT9NdDx0uBslZCjDulCyGR5sbYPXrvT/k9Bk3t47cZeGquPX26Gtw8uUp+ZZdKqL7KPf42cqxN52HtpWba393EzzcONeVkWwcZxsflT8PVdVv4OaynfjckpeL7kdHE5WhxX/PY7Gl2kn/4dmearapRjrx/BL8do7c7UvDxf1Bw0+NnPkeJs8ices619sl+h6n6Jyrud4eOXbVOicZeCSlF6lr/ACT9UariXRzX1PPj+Wm4wph46Mfsr2n137pJb16n0bSUUorSS0kuyOldztzvyfPUOHHqdUfDJ7OYgNOEzqggCMCkAUNVy1CtUvNbXjWoy9Im1MbK4WwcJraYlqlvmdeO5VV4/B5FX3TlHUUl36nmcHGzcvMqysXk8nGugtKFUYNR9/uT6s9xyPHyh90fHWntP1Rx04fHtJzqg5fCM1t8dY9lZp85PcS8zdwfLZ9E6svnuSspnLxSTda/h+Ha/Y7GNgZHHzqbyrroR7ztaba/ZI9Zj4eHV+dUxjr1a7HW5OiPK4rWHrwTTj5jlpa7P5E8mxkQzF6VnK1xoPpTE/1n6qfNVxX4PBUqoya62WNaevhKXf5R9CZp/pjjVxPF14itVrhvc1BR2zb7LHjy39ANjYZUgAGAAKoCABJKS1JbR0pcbW7fMhJxfwd0pGq2mvjh/DpwcZSbTWmvc4oYMYybhLwpvbiuzO2AkWmEhFQWorRkAEUEARdgADAEBWlBAQUEAFBCgUEKEUEKAKQAYAmwVoAIQUEKAKQoFBCgUEKBUCAJjj2DFFCqCFAAegAFIUAUgAo2QAXYAA//2Q==);
+  background-repeat: no-repeat;
+  background-size:cover;
 }
-.grid-item {
-  border:1px solid black;
-  background-color:gray;
-  text-align:center;
+#grad{
+  background-image: linear-gradient(to right,red,yellow);
+  height:100px;
 }
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container2{
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+#grad2{
+  background-image: repeating-radial-gradient(red 5%, yellow 20%, green 40%);
+  height:100px;
 }
-
-.grid-container2 > div {
-  background-color: rgba(255, 255, 255, 0.8);
+h1 {
+  color: yellow;
+  text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#t2d{
+  border: 1px solid blueviolet;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  height:50px;
+  width:70px;
+  background-color: yellow;
+  overflow: hidden;
+}
+#t2d:hover{
+  transform:translate(10px,50px);
+}
+#t3d{
+  border: 1px solid black;
+  text-align: center;
+  height:50px;
+  width:170px;
+  background-color: lightcoral;
+  transform: width 2s;
+}
+#t3d:hover{
+  width:400px;
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+div {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+#div2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+
+@keyframes example1 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
